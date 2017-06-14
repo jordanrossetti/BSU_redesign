@@ -1,0 +1,37 @@
+h1 {
+  font-family: "Slabo 27px", serif;
+}
+
+body {
+  font-size: 14px;
+}
+
+.jumbotron {
+    background-color: #fff;
+    color: #333;
+    padding: 50px 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jumbotron2 {
+    background-color: #80D5DC;
+    color: #fff;
+    padding: 50px 50px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.carousel .item {
+    width: 100%; /*slider width*/
+    height: 100%;
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+/*full width container*/
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
