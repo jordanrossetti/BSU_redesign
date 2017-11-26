@@ -2,9 +2,7 @@
 
   'use strict';
 
-  /**
-   * Extend Object helper function.
-   */
+  /* Extend Object helper function */
   function extend(a, b) {
     for(var key in b) {
       if(b.hasOwnProperty(key)) {
@@ -14,9 +12,7 @@
     return a;
   }
 
-  /**
-   * Each helper function.
-   */
+  /* Each helper function */
   function each(collection, callback) {
     for (var i = 0; i < collection.length; i++) {
       var item = collection[i];
@@ -119,20 +115,3 @@
   window.Menu = Menu;
 
 })(window);
-
-/**
-   * Slide right instantiation and action.
-   */
-  var slideRight = new Menu({
-    wrapper: '#o-wrapper',
-    type: 'slide-right',
-    menuOpenerClass: '.c-button',
-    maskId: '#c-mask'
-  });
-
-  var slideRightBtn = document.querySelector('#c-button--slide-right');
-
-  slideRightBtn.addEventListener('click', function(e) {
-    e.preventDefault;
-    slideRight.open();
-  });
